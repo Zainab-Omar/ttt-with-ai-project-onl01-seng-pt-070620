@@ -19,7 +19,10 @@ class Game
       @board.taken?(combo[0]+1)
     end
   end
-
+  
+  def draw?
+    @board.full? && !won?
+  end
 
 
 end

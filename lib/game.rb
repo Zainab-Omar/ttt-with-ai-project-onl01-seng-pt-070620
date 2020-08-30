@@ -23,6 +23,10 @@ class Game
   def draw?
     @board.full? && !won?
   end
+  
+  def over?
+    won? || draw?
+  end
 
 
 end
